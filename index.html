@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+  </head>
+  <body class="bg-gray-900">
+    <header id="utama">
+      <div class="w-full mx-auto relative">
+        
+        <div
+          class="w-full flex justify-between items-center px-5 lg:px-28 bg-teal-500 py-4"
+        >
+          <!-- judul -->
+          <div class="">
+            <h1
+              class="font-quicksand font-bold italic  text-xl lg:text-4xl text-white"
+            >
+              NETFLIX
+            </h1>
+          </div>
+          <!-- navbar -->
+          <div class="w-full lg:flex lg:justify-center relative">
+            <ul class="lg:w-[90%]">
+              <li
+                class="italic lg:w-[90%] md:w-[60%] md:mx-auto hidden lg:flex md:flex md:justify-between lg:justify-between md:bg-transparent items-center lg:static md:static absolute top-7 -right-[20%] bg-gray-500 lg:bg-transparent  w-[80%] text-white  h-auto lg:py-0 py-2 px-2 font-quicksand font-semibold"
+                id="navbar"
+              >
+                <a href="" class="block mb-2">Home</a>
+                <a href="" class="block mb-2">Moveis</a>
+                <a href="" class="block mb-2">Serial Tv</a>
+                <a href="" class="block mb-2">Genre</a>
+                <a href="" class="block mb-2">Negara</a>
+                <a href="" class="block mb-2">Tahun</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- hamburger -->
+          <div class="">
+            <button id="hamburger" class="md:hidden lg:hidden">
+              <img src="icon/hamburger.png" alt="" class="w-8" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="iklan">
+      <div class="w-full pt-5">
+        <div
+          class="lg:w-[85%] w-[95%] mx-auto lg:flex lg:justify-between lg:flex-wrap overflow-hidden"
+        >
+          <div class="lg:w-[33%]">
+            <img src="img/iklan.png" alt="" class="h-16 w-full" id="slider" />
+            <img
+              src="img/1.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slider"
+            />
+            <img
+              src="img/2.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slider"
+            />
+            <img
+              src="img/3.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slider"
+            />
+            <img
+              src="img/4.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slider"
+            />
+            <img
+              src="img/5.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slider"
+            />
+          </div>
+          <div class="lg:w-[33%]">
+            <img
+              src="img/3.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slide"
+            />
+            <img
+              src="img/2.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slide"
+            />
+            <img
+              src="img/iklan.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slide"
+            />
+            <img
+              src="img/1.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slide"
+            />
+            <img
+              src="img/5.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slide"
+            />
+            <img
+              src="img/4.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="slide"
+            />
+          </div>
+          <div class="lg:w-[33%]">
+            <img
+              src="img/2.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="sliders"
+            />
+            <img
+              src="img/5.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="sliders"
+            />
+            <img
+              src="img/3.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="sliders"
+            />
+            <img
+              src="img/4.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="sliders"
+            />
+            <img
+              src="img/iklan.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="sliders"
+            />
+            <img
+              src="img/1.png"
+              alt=""
+              class="h-16 w-full transition-all duration-500 ease-out"
+              id="sliders"
+            />
+          </div>
+        </div>
+        <div class="lg:w-[85%] w-[95%] h-[20%] mx-auto py-2 flex">
+          <input
+            type="text"
+            placeholder="Search"
+            class="border w-full rounded-l-md px-3 bg-gray-100"
+            id="search-input"
+          />
+          <button id="search-button" class="bg-yellow-600 p-0">
+            <img src="icon/search.png" alt="" class="w-10 p-2" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="film">
+      <div class="w-full py-5 font-quicksand font-semibold">
+        <div
+          id="movie-list"
+          class="w-[95%] lg:w-[85%] mx-auto grid lg:grid-cols-8 grid-cols-3 md:grid-cols-4 lg:gap-4 gap-2 "
+        ></div>
+      </div>
+    </section>
+
+
+    <section id="page">
+      <div class="w-full bg-white flex justify-center p-2">
+        <button id="prev">
+          <img src="icon/next.png" alt="" class="w-5 rotate-180">
+        </button>
+        <div class="mx-2">
+          <a href="">1</a>
+        </div>
+        <button id="next">
+          <img src="icon/next.png" alt="" class="w-5">
+        </button>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="w-full pt-5 bg-gray-100">
+        <div class="container mx-auto p-2">
+          <div class="w-full text-justify font-quicksand">
+            <h1 class="lg:text-3xl mb-3 font-semibold">
+              NETFLIX Nonton Film Streaming Movie Online, Bioskop Online
+            </h1>
+            <p class="text-sm lg:text-xl">
+              <span class="text-base lg:text-xl">
+                <span class="text-teal-500 font-semibold lg:text-2xl">NETFLIX</span> Nonton Film Streaming Movie Online, Bioskop
+                Online.</span
+              >
+              NETFLIX adalah Situs Nonton Film Bioskop 21 Online ,INDOXXI,
+              Layarkaca21 Lengkap dengan Subtitle Indonesia INDOXXI adalah situs
+              web nonton streaming online download film terbaru film asia
+              terbaru, film barat terbaru secara gratis dan lengkap. Disini
+              tersedia banyak kualitas video seperti bluray, web-dl, hd, dvdrip,
+              hdrip dan hdcam. Format video yang kami sediakan ada mp4 mkv serta
+              berbagai macam resolusi seperti 360p, 480p, 720p dan 1080p. Semua
+              film yang tersedia di situs ini hanya untuk review saja. Jika anda
+              ingin menonton film dengan kualitas yang lebih baik, silahkan beli
+              DVD resminya. 
+              <p class="text-sm lg:text-xl">
+                <span class="text-teal-500 font-semibold text-base lg:text-2xl">INDOXX1</span> tidak berhubungan dengan situs-situs lain
+              seperti Ganool, rebahin, cgvindo, bioskopkeren, cinemaindo,
+              dunia21, filmapik, kawanfilm21, Fmoviez, FMZM, indoxx1, indoxxi,
+              Juraganfilm21, Layarkaca21, lk21, Melongfilm, nb21,Pahe in,
+              Pusatfilm21, Sogafime, Streamxxi, dan lain-lain. Kami tidak pernah
+              meng-host video apapun di situs FilmApik21 ini. Situs ini
+              benar-benar legal dan hanya berisi tautan menuju situs pihak
+              ketiga seperti Acefile, Google Drive, Uptobox, Racaty, Openload,
+              Zippyshare, Rapidvideo, dan lainnya.
+              </p> 
+              <p class="text-sm lg:text-xl">
+                <span class="text-teal-500 font-semibold text-base lg:text-2xl">INDOXXI</span> tidak bertanggung
+              jawab atas kepatuhan, hak cipta, legalitas, kesopanan, atau aspek
+              lain dari konten situs terkait lainnya. Jika Anda memiliki masalah
+              hukum, silakan hubungi pemilik berkas media yang sesuai atau situs
+              web hosting yang terhubung.
+              </p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full bg-black lg:h-[90px] h-[60px] flex items-center justify-center">
+        <h1 class="text-white font-quicksand lg:text-xl">@ 2024 || All Rights Reserved</h1>
+      </div>
+    </section>
+    <!-- Loading -->
+    <div id="loading" class="hidden items-center bg-black bg-opacity-75 justify-center fixed w-full h-svh top-0 bottom-0 left-0 right-0">
+      <button disabled class="bg-teal-500 p-2 rounded-md flex items-center">
+        <img src="icon/loading.png" alt="" class="lg:w-7 w-5 animate-spin-slow">
+        <h1 class="ml-3 font-quicksand text-white lg:text-base text-sm">Processing.....</h1>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
